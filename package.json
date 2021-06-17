@@ -1,0 +1,15 @@
+{
+  "name": "Auth-Cognito-Service",
+  "version": "1.0.0",
+  "description": "This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sam-build": "cd verify-auth-challenge && tsc && cd .. && cd pre-sign-up && tsc && cd .. && cd define-auth-challenge && tsc && cd .. && cd create-auth-challenge && tsc && cd .. && sam build -u --parallel",
+    "sam-deploy": " sam deploy",
+    "sam-build-deploy": "npm run sam-build && npm run sam-deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
